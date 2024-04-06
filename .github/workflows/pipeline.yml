@@ -36,6 +36,8 @@ jobs:
         run: npm ci
       - name: Start the App
         run: npm start &
+      - name: Install Playwright
+        run: npx playwright install
       - name: Run UI tests
         run: npm run test:ui
 
